@@ -7,7 +7,7 @@
 FROM centos:centos6
 
 # File Author / Maintainer
-MAINTAINER Kaushal Kishore <kaushal.rahuljaiswal@gmail.com>
+MAINTAINER Vineet Agarwal <vineet@osscube.com>
 
 # Add the ngix and PHP dependent repository
 ADD nginx.repo /etc/yum.repos.d/nginx.repo
