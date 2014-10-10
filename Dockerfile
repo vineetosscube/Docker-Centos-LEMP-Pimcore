@@ -38,11 +38,11 @@ RUN yum install -y zip unzip
 RUN yum install -y git
 
 ## Remi Dependency on CentOS and Red Hat (RHEL) for Memcached
-rpm -Uvh http://dl.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
-rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-5.rpm
+RUN rpm -Uvh http://dl.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
+RUN rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-5.rpm
 
 ## Installing Memcached
-yum install memcached
+RUN yum install memcached
 
 
 # Enviroment variable for setting the Username and Password of MySQL
