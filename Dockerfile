@@ -42,7 +42,7 @@ RUN rpm -Uvh http://dl.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch
 RUN rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-5.rpm
 
 ## Installing Memcached
-RUN yum install memcached
+RUN yum install -y memcached
 
 
 # Enviroment variable for setting the Username and Password of MySQL
